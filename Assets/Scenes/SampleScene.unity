@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4366815, g: 0.48427612, b: 0.564526, a: 1}
+  m_IndirectSpecularColor: {r: 0.43672422, g: 0.48433203, b: 0.56458354, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -425,13 +425,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.7033327, y: 0, z: 0, w: 0.71086085}
+  m_LocalRotation: {x: 0.6923951, y: 0, z: 0, w: 0.7215185}
   m_LocalPosition: {x: 6.49, y: 5.3, z: 11.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 89.39, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 87.64, y: 0, z: 0}
 --- !u!1 &775817679
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,8 +991,9 @@ GameObject:
   - component: {fileID: 1168684217}
   - component: {fileID: 1168684216}
   - component: {fileID: 1168684215}
+  - component: {fileID: 1168684219}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Dropper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1074,6 +1075,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168684219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168684214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b05a0f35292b4039b5ba69ab2c11719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timetoWait: 5
 --- !u!1 &1565929289
 GameObject:
   m_ObjectHideFlags: 0

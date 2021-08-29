@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dropper : MonoBehaviour
-{ 
+{
+    [SerializeField] float timetoWait = 5f;
+
     void Update()
     {
-        Debug.Log(Time.time);
+        if (Time.time > timetoWait)
+        {
+            Debug.Log( timetoWait + " seconds has elaspsed");
+        }
     }
 }

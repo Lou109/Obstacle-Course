@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 10f;
-    // Start is called before the first frame update.
+    [SerializeField] float moveSpeed;
+    [SerializeField] float rotationSpeed;
+   
     void Start()
     {
         PrintInstructions();
     }
-
-    // Update is called once per frame
+   
     void Update()
     {
         MovePlayer();
@@ -26,8 +26,17 @@ public class Mover : MonoBehaviour
 
     void MovePlayer()
     {
-        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        transform.Translate(xValue, 0, zValue);
+        float xValue = Input.GetAxis("Horizontal");
+        float zValue = Input.GetAxis("Vertical");
+
+        Vector3 movementDirection = new Vector3(xValue, 0, zValue);
+        movementDirection.Normalize();
+        transform.Translate(movementDirection * moveSpeed * Time.deltaTime, Space.World);
+
+        if(movementDirection != Vector3.zero)
+    {
+        Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+    }
     }
 } 

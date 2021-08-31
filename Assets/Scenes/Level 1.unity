@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 783972050}
   - component: {fileID: 783972049}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Ground
   m_TagString: Hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

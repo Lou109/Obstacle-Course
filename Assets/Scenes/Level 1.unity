@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 1761662494}
   - component: {fileID: 1761662495}
   m_Layer: 0
-  m_Name: Slug Bot
+  m_Name: 'Slug '
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

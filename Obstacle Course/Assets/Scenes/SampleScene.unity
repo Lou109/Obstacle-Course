@@ -922,7 +922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotationSpeed: 720
-  jumpForce: 700
+  jumpForce: 360
 --- !u!54 &1623230000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -931,7 +931,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623229994}
   serializedVersion: 4
-  m_Mass: 2.4
+  m_Mass: 1
   m_Drag: 2
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}

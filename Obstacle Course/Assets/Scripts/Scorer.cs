@@ -8,7 +8,10 @@ public class Scorer : MonoBehaviour
 
     void OnCollisionEnter(Collision other) 
     {
+        if(other.gameObject.tag != "Hit" && other.gameObject.tag != "Ground")
+        {
         hits++;
         Debug.Log ("You've bumped into a thing this many times: " + hits);
+        }
     }
 }
